@@ -7,6 +7,24 @@
          "match" : "(//.*)",
          "name": "comment.strings.clipper" 
       },
+      {
+         "comment" : "multi-line comments",
+        "begin" : "^(\\s*/\\*.*)$",
+        "beginCaptures": {
+         "1": { "name": "comment.strings" }
+         },
+         "patterns": [
+            { "include": "$self" },
+            {  
+              "name": "comment.strings",
+              "match": "."
+            }
+         ],
+         "end" : "^(\\s*\\*/\\s*)$",
+         "endCaptures": {
+         "1": { "name": "comment.strings" }
+      }
+      },
       {  
          "comment" : "números",
          "match" : "([0-9]+\\.?[0-9]*)",
