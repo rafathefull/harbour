@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|function|return|for|next)\b</string>
+			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|function|return|for|next|include)\b</string>
 			<key>name</key>
 			<string>keyword.control.clipper</string>
 		</dict>
@@ -69,9 +69,9 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>in-line comment with #</string>
+			<string>in-line comment with //</string>
 			<key>match</key>
-			<string>(//.*)</string>
+			<string>((//).*)</string>
 			<key>name</key>
 			<string>comment.strings.clipper</string>
 		</dict>

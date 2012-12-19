@@ -19,7 +19,7 @@
       },
       {  
          "comment" : "sentencias de control",
-         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|function|return|for|next)\\b",
+         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|function|return|for|next|include)\\b",
          "name": "keyword.control.clipper" 
       },
       {  
@@ -38,8 +38,8 @@
          "name": "storage.type.clipper" 
       },
       {  
-         "comment" : "in-line comment with #",
-         "match" : "(//.*)",
+         "comment" : "in-line comment with //",
+         "match" : "((//).*)",
          "name": "comment.strings.clipper" 
       },
       {
