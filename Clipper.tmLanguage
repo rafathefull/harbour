@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>prg</string>
+		<string>ch</string>
+	</array>
+	<key>name</key>
+	<string>Clipper</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>in-line comment with #</string>
+			<key>match</key>
+			<string>(//.*)</string>
+			<key>name</key>
+			<string>comment.strings.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>números</string>
+			<key>match</key>
+			<string>([0-9]+\.?[0-9]*)</string>
+			<key>name</key>
+			<string>constant.numeric.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>cadenas comillas simples</string>
+			<key>match</key>
+			<string>'[^']*'</string>
+			<key>name</key>
+			<string>string.quoted.single.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>cadenas comillas dobles</string>
+			<key>match</key>
+			<string>("[^"]*")</string>
+			<key>name</key>
+			<string>string.quoted.double.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>sentencias de control</string>
+			<key>match</key>
+			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|function|return|for|next)\b</string>
+			<key>name</key>
+			<string>keyword.control.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>funciones</string>
+			<key>match</key>
+			<string>(?i)(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL|BIN2I|BIN2L|BIN2U|BIN2W|BOF|BREAK|BROWSE|CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR|DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|ELAPTIME|EMPTY|EOF|ERRORSYS|EVAL|EXP|FCLOSE|FCOUNT|FCREATE|FERASE|FERROR|FIELDBLOCK|FIELDGET|FIELDNAME|FIELDPOS|FIELDPUT|FIELDWBLOCK|FILE|FLOCK|FOPEN|FOUND|FREAD|FREADSTR|FRENAME|FSEEK|FWRITE|GETENV|HARDCR|HB_ANSITOOEM|HB_DISKSPACE|HB_FEOF|HB_KEYPUT|HB_LANGNAME|HB_LANGSELECT|HB_OEMTOANSI|HB_OSNEWLINE|HB_PVALUE|HB_SetKeyCheck|HB_SetKeyGet|HB_SETKEYSAVE|HB_VALTOSTR|HEADER|I2BIN|INDEXEXT|INDEXKEY|INDEXORD|INKEY|INT|ISAFFIRM|ISALPHA|ISDIGIT|ISDISK|ISLOWER|ISNEGATIVE|ISUPPER|L2BIN|LASTKEY|LASTREC|LEFT|LOG|LOWER|LTRIM|LUPDATE|MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOTRAN|MEMVARBLOCK|MIN|MOD|MONTH|MROW|dbSkipper|hb_ColorIndex|NATIONMSG|NETERR|NEXTKEY|ORDBAGEXT|ORDBAGNAME|ORDCONDSET|ORDCREATE|ORDDESTROY|ORDFOR|ORDKEY|ORDLISTADD|ORDLISTCLEAR|ORDLISTREBUILD|ORDNAME|ORDNUMBER|ORDSETFOCUS|OS|OUTERR|OUTSTD|PADC|PADL|PADR|PCOUNT|PROCFILE|PROCLINE|PROCNAME|RAT|RDDLIST|RDDNAME|RDDSETDEFAULT|READKEY|READVAR|RECCOUNT|RECNO|RECSIZE|REPLICATE|RIGHT|RLOCK|ROUND|ROW|RTRIM|SECONDS|SECS|SELECT|SET|SETKEY|SETMODE|SETTYPEAHEAD|SPACE|SQRT|STR|STRTRAN|STRZERO|SUBSTR|TBrowseDB|TBROWSENew|TClass|TIME|TONE|TRANSFORM|TRIM|TYPE|U2BIN|UPPER|USED|VAL|VALTYPE|VERSION|W2BIN|WORD|YEAR)</string>
+			<key>name</key>
+			<string>support.function.basic.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>sentencias de control</string>
+			<key>match</key>
+			<string>(?i)\b(?:catch|finally|try|throw)\b</string>
+			<key>name</key>
+			<string>keyword.control.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>declaraciones</string>
+			<key>match</key>
+			<string>(?i)\b(?:local|default|field|static|public|static|external|REQUEST)\b</string>
+			<key>name</key>
+			<string>storage.type.clipper</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.clipper</string>
+	<key>uuid</key>
+	<string>56571807-d94d-4805-bbfc-87d347d189e4</string>
+</dict>
+</plist>

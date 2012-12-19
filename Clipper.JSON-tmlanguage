@@ -1,0 +1,49 @@
+{ "name": "Clipper",
+  "scopeName": "source.clipper",
+  "fileTypes": ["prg", "ch"],
+  "patterns": [
+      {  
+         "comment" : "in-line comment with #",
+         "match" : "(//.*)",
+         "name": "comment.strings.clipper" 
+      },
+      {  
+         "comment" : "números",
+         "match" : "([0-9]+\\.?[0-9]*)",
+         "name": "constant.numeric.clipper" 
+      },
+      {  
+         "comment" : "cadenas comillas simples",
+         "match" : "'[^']*'",
+         "name": "string.quoted.single.clipper" 
+      },
+      {  
+         "comment" : "cadenas comillas dobles",
+         "match" : "(\"[^\"]*\")",
+         "name": "string.quoted.double.clipper" 
+      },
+      {  
+         "comment" : "sentencias de control",
+         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|function|return|for|next)\\b",
+         "name": "keyword.control.clipper" 
+      },
+      {  
+         "comment" : "funciones",
+         "match" : "(?i)(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL|BIN2I|BIN2L|BIN2U|BIN2W|BOF|BREAK|BROWSE|CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR|DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|ELAPTIME|EMPTY|EOF|ERRORSYS|EVAL|EXP|FCLOSE|FCOUNT|FCREATE|FERASE|FERROR|FIELDBLOCK|FIELDGET|FIELDNAME|FIELDPOS|FIELDPUT|FIELDWBLOCK|FILE|FLOCK|FOPEN|FOUND|FREAD|FREADSTR|FRENAME|FSEEK|FWRITE|GETENV|HARDCR|HB_ANSITOOEM|HB_DISKSPACE|HB_FEOF|HB_KEYPUT|HB_LANGNAME|HB_LANGSELECT|HB_OEMTOANSI|HB_OSNEWLINE|HB_PVALUE|HB_SetKeyCheck|HB_SetKeyGet|HB_SETKEYSAVE|HB_VALTOSTR|HEADER|I2BIN|INDEXEXT|INDEXKEY|INDEXORD|INKEY|INT|ISAFFIRM|ISALPHA|ISDIGIT|ISDISK|ISLOWER|ISNEGATIVE|ISUPPER|L2BIN|LASTKEY|LASTREC|LEFT|LOG|LOWER|LTRIM|LUPDATE|MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOTRAN|MEMVARBLOCK|MIN|MOD|MONTH|MROW|dbSkipper|hb_ColorIndex|NATIONMSG|NETERR|NEXTKEY|ORDBAGEXT|ORDBAGNAME|ORDCONDSET|ORDCREATE|ORDDESTROY|ORDFOR|ORDKEY|ORDLISTADD|ORDLISTCLEAR|ORDLISTREBUILD|ORDNAME|ORDNUMBER|ORDSETFOCUS|OS|OUTERR|OUTSTD|PADC|PADL|PADR|PCOUNT|PROCFILE|PROCLINE|PROCNAME|RAT|RDDLIST|RDDNAME|RDDSETDEFAULT|READKEY|READVAR|RECCOUNT|RECNO|RECSIZE|REPLICATE|RIGHT|RLOCK|ROUND|ROW|RTRIM|SECONDS|SECS|SELECT|SET|SETKEY|SETMODE|SETTYPEAHEAD|SPACE|SQRT|STR|STRTRAN|STRZERO|SUBSTR|TBrowseDB|TBROWSENew|TClass|TIME|TONE|TRANSFORM|TRIM|TYPE|U2BIN|UPPER|USED|VAL|VALTYPE|VERSION|W2BIN|WORD|YEAR)",
+         "name": "support.function.basic.clipper" 
+      },
+      {  
+         "comment" : "sentencias de control",
+         "match" : "(?i)\\b(?:catch|finally|try|throw)\\b",
+         "name": "keyword.control.clipper" 
+      },
+      {  
+         "comment" : "declaraciones",
+         "match" : "(?i)\\b(?:local|default|field|static|public|static|external|REQUEST)\\b",
+         "name": "storage.type.clipper" 
+      }
+
+
+  ],
+  "uuid": "56571807-d94d-4805-bbfc-87d347d189e4"
+}
