@@ -1,0 +1,10 @@
+<snippet>
+	<description>if..else..endif</description>
+    <content><![CDATA[if (${1:condicion})
+	${0:/* codigo */}
+else
+	${0:/* codigo */}
+endif]]></content>
+    <tabTrigger>ife</tabTrigger>
+    <scope>source.clipper</scope>
+</snippet>

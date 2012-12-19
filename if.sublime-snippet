@@ -1,0 +1,8 @@
+<snippet>
+	<description>if..endif</description>
+    <content><![CDATA[if (${1:condicion})
+	${0:instruccion}
+endif]]></content>
+    <tabTrigger>if</tabTrigger>
+    <scope>source.clipper</scope>
+</snippet>
