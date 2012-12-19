@@ -3,31 +3,8 @@
   "fileTypes": ["prg", "ch"],
   "patterns": [
       {  
-         "comment" : "in-line comment with #",
-         "match" : "(//.*)",
-         "name": "comment.strings.clipper" 
-      },
-      {
-         "comment" : "multi-line comments",
-        "begin" : "^(\\s*/\\*.*)$",
-        "beginCaptures": {
-         "1": { "name": "comment.strings" }
-         },
-         "patterns": [
-            { "include": "$self" },
-            {  
-              "name": "comment.strings",
-              "match": "."
-            }
-         ],
-         "end" : "^(\\s*\\*/\\s*)$",
-         "endCaptures": {
-         "1": { "name": "comment.strings" }
-      }
-      },
-      {  
          "comment" : "números",
-         "match" : "([0-9]+\\.?[0-9]*)",
+         "match" : "(\\s[0-9]+\\.?[0-9]*)",
          "name": "constant.numeric.clipper" 
       },
       {  
@@ -59,9 +36,30 @@
          "comment" : "declaraciones",
          "match" : "(?i)\\b(?:local|default|field|static|public|static|external|REQUEST)\\b",
          "name": "storage.type.clipper" 
+      },
+      {  
+         "comment" : "in-line comment with #",
+         "match" : "(//.*)",
+         "name": "comment.strings.clipper" 
+      },
+      {
+         "comment" : "multi-line comments",
+        "begin" : "^(\\s*/\\*.*)$",
+        "beginCaptures": {
+         "1": { "name": "comment.strings.clipper" }
+         },
+         "patterns": [
+            { "include": "$self" },
+            {  
+              "name": "comment.strings.clipper",
+              "match": "."
+            }
+         ],
+         "end" : "^(\\s*\\*/\\s*)$",
+         "endCaptures": {
+         "1": { "name": "comment.strings.clipper" }
       }
-
-
+      }
   ],
   "uuid": "56571807-d94d-4805-bbfc-87d347d189e4"
 }

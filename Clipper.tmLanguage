@@ -13,54 +13,9 @@
 	<array>
 		<dict>
 			<key>comment</key>
-			<string>in-line comment with #</string>
-			<key>match</key>
-			<string>(//.*)</string>
-			<key>name</key>
-			<string>comment.strings.clipper</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>^(\s*/\*.*)$</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>comment.strings</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>multi-line comments</string>
-			<key>end</key>
-			<string>^(\s*\*/\s*)$</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>comment.strings</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>.</string>
-					<key>name</key>
-					<string>comment.strings</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>comment</key>
 			<string>números</string>
 			<key>match</key>
-			<string>([0-9]+\.?[0-9]*)</string>
+			<string>(\s[0-9]+\.?[0-9]*)</string>
 			<key>name</key>
 			<string>constant.numeric.clipper</string>
 		</dict>
@@ -111,6 +66,51 @@
 			<string>(?i)\b(?:local|default|field|static|public|static|external|REQUEST)\b</string>
 			<key>name</key>
 			<string>storage.type.clipper</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>in-line comment with #</string>
+			<key>match</key>
+			<string>(//.*)</string>
+			<key>name</key>
+			<string>comment.strings.clipper</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*/\*.*)$</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>comment.strings.clipper</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>multi-line comments</string>
+			<key>end</key>
+			<string>^(\s*\*/\s*)$</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>comment.strings.clipper</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>comment.strings.clipper</string>
+				</dict>
+			</array>
 		</dict>
 	</array>
 	<key>scopeName</key>
