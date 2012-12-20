@@ -8,7 +8,7 @@
 		<string>ch</string>
 	</array>
 	<key>name</key>
-	<string>Clipper</string>
+	<string>Harbour</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -17,7 +17,7 @@
 			<key>match</key>
 			<string>(\s[0-9]+\.?[0-9]*)</string>
 			<key>name</key>
-			<string>constant.numeric.clipper</string>
+			<string>constant.numeric.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -25,7 +25,7 @@
 			<key>match</key>
 			<string>'[^']*'</string>
 			<key>name</key>
-			<string>string.quoted.single.clipper</string>
+			<string>string.quoted.single.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -33,7 +33,7 @@
 			<key>match</key>
 			<string>("[^"]*")</string>
 			<key>name</key>
-			<string>string.quoted.double.clipper</string>
+			<string>string.quoted.double.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -41,7 +41,7 @@
 			<key>match</key>
 			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include)\b</string>
 			<key>name</key>
-			<string>keyword.control.clipper</string>
+			<string>keyword.control.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -49,7 +49,7 @@
 			<key>match</key>
 			<string>(?i)\b(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL|BIN2I|BIN2L|BIN2U|BIN2W|BOF|BREAK|BROWSE|CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR|DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|ELAPTIME|EMPTY|EOF|ERRORSYS|EVAL|EXP|FCLOSE|FCOUNT|FCREATE|FERASE|FERROR|FIELDBLOCK|FIELDGET|FIELDNAME|FIELDPOS|FIELDPUT|FIELDWBLOCK|FILE|FLOCK|FOPEN|FOUND|FREAD|FREADSTR|FRENAME|FSEEK|FWRITE|GETENV|HARDCR|HB_ANSITOOEM|HB_DISKSPACE|HB_FEOF|HB_KEYPUT|HB_LANGNAME|HB_LANGSELECT|HB_OEMTOANSI|HB_OSNEWLINE|HB_PVALUE|HB_SetKeyCheck|HB_SetKeyGet|HB_SETKEYSAVE|HB_VALTOSTR|HEADER|I2BIN|INDEXEXT|INDEXKEY|INDEXORD|INKEY|INT|ISAFFIRM|ISALPHA|ISDIGIT|ISDISK|ISLOWER|ISNEGATIVE|ISUPPER|L2BIN|LASTKEY|LASTREC|LEFT|LOG|LOWER|LTRIM|LUPDATE|MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOTRAN|MEMVARBLOCK|MIN|MOD|MONTH|MROW|dbSkipper|hb_ColorIndex|NATIONMSG|NETERR|NEXTKEY|ORDBAGEXT|ORDBAGNAME|ORDCONDSET|ORDCREATE|ORDDESTROY|ORDFOR|ORDKEY|ORDLISTADD|ORDLISTCLEAR|ORDLISTREBUILD|ORDNAME|ORDNUMBER|ORDSETFOCUS|OS|OUTERR|OUTSTD|PADC|PADL|PADR|PCOUNT|PROCFILE|PROCLINE|PROCNAME|RAT|RDDLIST|RDDNAME|RDDSETDEFAULT|READKEY|READVAR|RECCOUNT|RECNO|RECSIZE|REPLICATE|RIGHT|RLOCK|ROUND|ROW|RTRIM|SECONDS|SECS|SELECT|SET|SETKEY|SETMODE|SETTYPEAHEAD|SPACE|SQRT|STR|STRTRAN|STRZERO|SUBSTR|TBrowseDB|TBROWSENew|TClass|TIME|TONE|TRANSFORM|TRIM|TYPE|U2BIN|UPPER|USED|VAL|VALTYPE|VERSION|W2BIN|WORD|YEAR)</string>
 			<key>name</key>
-			<string>support.function.basic.clipper</string>
+			<string>support.function.basic.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -57,7 +57,7 @@
 			<key>match</key>
 			<string>(?i)\b(?:catch|finally|try|throw)\b</string>
 			<key>name</key>
-			<string>keyword.control.clipper</string>
+			<string>keyword.control.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -65,7 +65,7 @@
 			<key>match</key>
 			<string>(?i)\b(?:local|default|field|static|public|static|external|REQUEST)\b</string>
 			<key>name</key>
-			<string>storage.type.clipper</string>
+			<string>storage.type.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -73,7 +73,7 @@
 			<key>match</key>
 			<string>((//).*)</string>
 			<key>name</key>
-			<string>comment.strings.clipper</string>
+			<string>comment.strings.harbour</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -83,7 +83,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>comment.strings.clipper</string>
+					<string>comment.strings.harbour</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -95,7 +95,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>comment.strings.clipper</string>
+					<string>comment.strings.harbour</string>
 				</dict>
 			</dict>
 			<key>patterns</key>
@@ -108,13 +108,13 @@
 					<key>match</key>
 					<string>.</string>
 					<key>name</key>
-					<string>comment.strings.clipper</string>
+					<string>comment.strings.harbour</string>
 				</dict>
 			</array>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.clipper</string>
+	<string>source.harbour</string>
 	<key>uuid</key>
 	<string>56571807-d94d-4805-bbfc-87d347d189e4</string>
 </dict>

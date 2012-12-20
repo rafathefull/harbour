@@ -6,5 +6,5 @@ else
 	${0:/* codigo */}
 endif]]></content>
     <tabTrigger>ife</tabTrigger>
-    <scope>source.clipper</scope>
+    <scope>source.harbour</scope>
 </snippet>

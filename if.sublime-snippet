@@ -4,5 +4,5 @@
 	${0:instruccion}
 endif]]></content>
     <tabTrigger>if</tabTrigger>
-    <scope>source.clipper</scope>
+    <scope>source.harbour</scope>
 </snippet>

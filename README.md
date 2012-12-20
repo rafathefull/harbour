@@ -1,7 +1,7 @@
-clipper
+Harbour
 =======
 
-Definicion de lenguaje clipper para Sublime Text  2
+Definicion de lenguaje Harbour para Sublime Text  2
 compatible con Harbour.
 
 Regular Expressions’ Syntax In Syntax Definitions
