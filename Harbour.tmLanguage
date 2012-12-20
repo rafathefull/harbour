@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include)\b</string>
+			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include|ifdef)\b</string>
 			<key>name</key>
 			<string>keyword.control.harbour</string>
 		</dict>
@@ -61,9 +61,9 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>in-line comment with //</string>
+			<string>in-line comment with // or *</string>
 			<key>match</key>
-			<string>((//).*)</string>
+			<string>((//|\*).*)</string>
 			<key>name</key>
 			<string>comment.strings.harbour</string>
 		</dict>
@@ -108,7 +108,7 @@
 			<key>comment</key>
 			<string>funciones A</string>
 			<key>match</key>
-			<string>(?i)\b(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL)</string>
+			<string>(?i)\b(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -116,7 +116,7 @@
 			<key>comment</key>
 			<string>funciones B</string>
 			<key>match</key>
-			<string>(?i)\b(?:BIN2I|BIN2L|BIN2U|BIN2W|BOF|BREAK|BROWSE)</string>
+			<string>(?i)\b(?:BIN2I|BIN2L|BIN2U|BIN2W|BOF|BREAK|BROWSE)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -124,7 +124,7 @@
 			<key>comment</key>
 			<string>funciones C</string>
 			<key>match</key>
-			<string>(?i)\b(?:CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR)</string>
+			<string>(?i)\b(?:CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -132,7 +132,7 @@
 			<key>comment</key>
 			<string>funciones D</string>
 			<key>match</key>
-			<string>(?i)\b(?:DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|dbSkipper)</string>
+			<string>(?i)\b(?:DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|dbSkipper)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -140,7 +140,7 @@
 			<key>comment</key>
 			<string>funciones E</string>
 			<key>match</key>
-			<string>(?i)\b(?:ELAPTIME|EMPTY|EOF|ERRORSYS|EVAL|EXP|FCLOSE|FCOUNT|FCREATE|FERASE|FERROR|FIELDBLOCK|FIELDGET|FIELDNAME|FIELDPOS|FIELDPUT|FIELDWBLOCK|FILE|FLOCK|FOPEN|FOUND|FREAD|FREADSTR|FRENAME|FSEEK|FWRITE)</string>
+			<string>(?i)\b(?:ELAPTIME|EMPTY|EOF|ERRORSYS|EVAL|EXP|FCLOSE|FCOUNT|FCREATE|FERASE|FERROR|FIELDBLOCK|FIELDGET|FIELDNAME|FIELDPOS|FIELDPUT|FIELDWBLOCK|FILE|FLOCK|FOPEN|FOUND|FREAD|FREADSTR|FRENAME|FSEEK|FWRITE)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -156,7 +156,7 @@
 			<key>comment</key>
 			<string>funciones G</string>
 			<key>match</key>
-			<string>(?i)\b(?:GETENV)</string>
+			<string>(?i)\b(?:GETENV)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -164,7 +164,7 @@
 			<key>comment</key>
 			<string>funciones H</string>
 			<key>match</key>
-			<string>(?i)\b(?:HARDCR|HB_ANSITOOEM|HB_DISKSPACE|HB_FEOF|HB_KEYPUT|HB_LANGNAME|HB_LANGSELECT|HB_OEMTOANSI|HB_OSNEWLINE|HB_PVALUE|HB_SetKeyCheck|HB_SetKeyGet|HB_SETKEYSAVE|HB_VALTOSTR|HEADER|hb_ColorIndex)</string>
+			<string>(?i)\b(?:HARDCR|HB_ANSITOOEM|HB_DISKSPACE|HB_FEOF|HB_KEYPUT|HB_LANGNAME|HB_LANGSELECT|HB_OEMTOANSI|HB_OSNEWLINE|HB_PVALUE|HB_SetKeyCheck|HB_SetKeyGet|HB_SETKEYSAVE|HB_VALTOSTR|HEADER|hb_ColorIndex)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -172,7 +172,7 @@
 			<key>comment</key>
 			<string>funciones I</string>
 			<key>match</key>
-			<string>(?i)\b(?:I2BIN|INDEXEXT|INDEXKEY|INDEXORD|INKEY|INT|ISAFFIRM|ISALPHA|ISDIGIT|ISDISK|ISLOWER|ISNEGATIVE|ISUPPER)</string>
+			<string>(?i)\b(?:I2BIN|INDEXEXT|INDEXKEY|INDEXORD|INKEY|INT|ISAFFIRM|ISALPHA|ISDIGIT|ISDISK|ISLOWER|ISNEGATIVE|ISUPPER)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -196,7 +196,7 @@
 			<key>comment</key>
 			<string>funciones L</string>
 			<key>match</key>
-			<string>(?i)\b(?:L2BIN|LASTKEY|LASTREC|LEFT|LOG|LOWER|LTRIM|LUPDATE)</string>
+			<string>(?i)\b(?:L2BIN|LASTKEY|LASTREC|LEFT|LOG|LOWER|LTRIM|LUPDATE)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -204,7 +204,7 @@
 			<key>comment</key>
 			<string>funciones M</string>
 			<key>match</key>
-			<string>(?i)\b(?:MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOTRAN|MEMVARBLOCK|MIN|MOD|MONTH|MROW)</string>
+			<string>(?i)\b(?:MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOTRAN|MEMVARBLOCK|MIN|MOD|MONTH|MROW)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -212,7 +212,7 @@
 			<key>comment</key>
 			<string>funciones N</string>
 			<key>match</key>
-			<string>(?i)\b(?:NATIONMSG|NETERR|NEXTKEY)</string>
+			<string>(?i)\b(?:NATIONMSG|NETERR|NEXTKEY)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -220,7 +220,7 @@
 			<key>comment</key>
 			<string>funciones O</string>
 			<key>match</key>
-			<string>(?i)\b(?:ORDBAGEXT|ORDBAGNAME|ORDCONDSET|ORDCREATE|ORDDESTROY|ORDFOR|ORDKEY|ORDLISTADD|ORDLISTCLEAR|ORDLISTREBUILD|ORDNAME|ORDNUMBER|ORDSETFOCUS|OS|OUTERR|OUTSTD)</string>
+			<string>(?i)\b(?:ORDBAGEXT|ORDBAGNAME|ORDCONDSET|ORDCREATE|ORDDESTROY|ORDFOR|ORDKEY|ORDLISTADD|ORDLISTCLEAR|ORDLISTREBUILD|ORDNAME|ORDNUMBER|ORDSETFOCUS|OS|OUTERR|OUTSTD)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -228,7 +228,7 @@
 			<key>comment</key>
 			<string>funciones P</string>
 			<key>match</key>
-			<string>(?i)\b(?:PADC|PADL|PADR|PCOUNT|PROCFILE|PROCLINE|PROCNAME)</string>
+			<string>(?i)\b(?:PADC|PADL|PADR|PCOUNT|PROCFILE|PROCLINE|PROCNAME)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -244,7 +244,7 @@
 			<key>comment</key>
 			<string>funciones R</string>
 			<key>match</key>
-			<string>(?i)\b(?:RAT|RDDLIST|RDDNAME|RDDSETDEFAULT|READKEY|READVAR|RECCOUNT|RECNO|RECSIZE|REPLICATE|RIGHT|RLOCK|ROUND|ROW|RTRIM)</string>
+			<string>(?i)\b(?:RAT|RDDLIST|RDDNAME|RDDSETDEFAULT|READKEY|READVAR|RECCOUNT|RECNO|RECSIZE|REPLICATE|RIGHT|RLOCK|ROUND|ROW|RTRIM)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -252,7 +252,7 @@
 			<key>comment</key>
 			<string>funciones S</string>
 			<key>match</key>
-			<string>(?i)\b(?:SECONDS|SECS|SELECT|SET|SETKEY|SETMODE|SETTYPEAHEAD|SPACE|SQRT|STR|STRTRAN|STRZERO|SUBSTR)</string>
+			<string>(?i)\b(?:SECONDS|SECS|SELECT|SET|SETKEY|SETMODE|SETTYPEAHEAD|SPACE|SQRT|STR|STRTRAN|STRZERO|SUBSTR)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -260,7 +260,7 @@
 			<key>comment</key>
 			<string>funciones T</string>
 			<key>match</key>
-			<string>(?i)\b(?:TBrowseDB|TBROWSENew|TClass|TIME|TONE|TRANSFORM|TRIM|TYPE)</string>
+			<string>(?i)\b(?:TBrowseDB|TBROWSENew|TClass|TIME|TONE|TRANSFORM|TRIM|TYPE)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -268,7 +268,7 @@
 			<key>comment</key>
 			<string>funciones U</string>
 			<key>match</key>
-			<string>(?i)\b(?:U2BIN|UPPER|USED)</string>
+			<string>(?i)\b(?:U2BIN|UPPER|USED)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -276,7 +276,7 @@
 			<key>comment</key>
 			<string>funciones V</string>
 			<key>match</key>
-			<string>(?i)\b(?:VAL|VALTYPE|VERSION)</string>
+			<string>(?i)\b(?:VAL|VALTYPE|VERSION)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -300,7 +300,7 @@
 			<key>comment</key>
 			<string>funciones Y</string>
 			<key>match</key>
-			<string>(?i)\b(?:YEAR)</string>
+			<string>(?i)\b(?:YEAR)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
