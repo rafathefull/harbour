@@ -19,7 +19,7 @@
       },
       {  
          "comment" : "sentencias de control",
-         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include)\\b",
+         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include|ifdef)\\b",
          "name": "keyword.control.harbour" 
       },
       {  
@@ -67,7 +67,7 @@
       },
       {  
          "comment" : "funciones C",
-         "match" : "(?i)\\b(?:CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR)",
+         "match" : "(?i)\\b(?:CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR)\\b",
          "name": "support.function.basic.harbour" 
       },
 
