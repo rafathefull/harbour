@@ -127,7 +127,7 @@
 
       {  
          "comment" : "funciones M",
-         "match" : "(?i)\\b(?:MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOTRAN|MEMVARBLOCK|MIN|MOD|MONTH|MROW)\\b",
+         "match" : "(?i)\\b(?:MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOEDIT|MEMOTRAN|MEMOWRIT|MEMVARBLOCK|MIN|MOD|MONTH|MROW)\\b",
          "name": "support.function.basic.harbour" 
       },
 
