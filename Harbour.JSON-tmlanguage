@@ -198,7 +198,13 @@
          "comment" : "funciones Z",
          "match" : "(?i)\\b(?:)",
          "name": "support.function.basic.harbour" 
+      },
+      {  
+         "comment" : "Definition class",
+         "match" : "(?i)\\b(?:class|data|method|var|endclass)",
+         "name": "support.type.harbour" 
       }
+
   ],
   "uuid": "56571807-d94d-4805-bbfc-87d347d189e4"
 }

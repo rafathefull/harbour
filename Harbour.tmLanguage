@@ -312,6 +312,14 @@
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Definition class</string>
+			<key>match</key>
+			<string>(?i)\b(?:class|data|method|var|endclass)</string>
+			<key>name</key>
+			<string>support.type.harbour</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.harbour</string>
