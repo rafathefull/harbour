@@ -1,9 +1,9 @@
 <snippet>
 	<description>if..else..endif</description>
     <content><![CDATA[if (${1:condicion})
-	${0:/* codigo */}
+	${0:// True }
 else
-	${0:/* codigo */}
+	${2:// False }
 endif]]></content>
     <tabTrigger>ife</tabTrigger>
     <scope>source.harbour</scope>
