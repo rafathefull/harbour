@@ -29,7 +29,7 @@
       },
       {  
          "comment" : "declaraciones",
-         "match" : "(?i)\\b(?:local|default|field|static|public|static|external|REQUEST)\\b",
+         "match" : "(?i)\\b(?:local|default|field|static|public|static|external|REQUEST|private)\\b",
          "name": "storage.type.harbour" 
       },
       {  
