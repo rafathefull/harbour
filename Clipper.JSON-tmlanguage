@@ -19,7 +19,7 @@
       },
       {  
          "comment" : "sentencias de control",
-         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|function|return|for|next|include)\\b",
+         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include)\\b",
          "name": "keyword.control.clipper" 
       },
       {  
