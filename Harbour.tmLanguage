@@ -55,7 +55,7 @@
 			<key>comment</key>
 			<string>declaraciones</string>
 			<key>match</key>
-			<string>(?i)\b(?:local|default|field|static|public|static|external|REQUEST)\b</string>
+			<string>(?i)\b(?:local|default|field|static|public|static|external|REQUEST|private)\b</string>
 			<key>name</key>
 			<string>storage.type.harbour</string>
 		</dict>
@@ -132,7 +132,7 @@
 			<key>comment</key>
 			<string>funciones D</string>
 			<key>match</key>
-			<string>(?i)\b(?:DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|dbSkipper)\b</string>
+			<string>(?i)\b(?:DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|dbSkipper|Directory)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -204,7 +204,7 @@
 			<key>comment</key>
 			<string>funciones M</string>
 			<key>match</key>
-			<string>(?i)\b(?:MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOTRAN|MEMVARBLOCK|MIN|MOD|MONTH|MROW)\b</string>
+			<string>(?i)\b(?:MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOEDIT|MEMOTRAN|MEMOWRIT|MEMVARBLOCK|MIN|MOD|MONTH|MROW)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
