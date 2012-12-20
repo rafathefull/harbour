@@ -8,6 +8,11 @@
          "name": "constant.numeric.harbour" 
       },
       {  
+         "comment" : "Boolean",
+         "match" : "(?i)(\\.(?:T|F)\\.)",
+         "name": "constant.numeric.harbour" 
+      },
+      {  
          "comment" : "cadenas comillas simples",
          "match" : "'[^']*'",
          "name": "string.quoted.single.harbour" 
@@ -204,7 +209,6 @@
          "match" : "(?i)\\b(?:class|data|method|var|endclass)",
          "name": "support.type.harbour" 
       }
-
   ],
   "uuid": "56571807-d94d-4805-bbfc-87d347d189e4"
 }

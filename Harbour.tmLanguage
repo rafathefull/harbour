@@ -21,6 +21,14 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>números</string>
+			<key>match</key>
+			<string>(?i)(\.(?:T|F)\.)</string>
+			<key>name</key>
+			<string>constant.numeric.harbour</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>cadenas comillas simples</string>
 			<key>match</key>
 			<string>'[^']*'</string>
