@@ -348,7 +348,7 @@
 			<key>comment</key>
 			<string>Boolean</string>
 			<key>match</key>
-			<string>(?i)(\.(?:T|F)\.)</string>
+			<string>(?i)(\.(T|F)\.)</string>
 			<key>name</key>
 			<string>constant.numeric.harbour</string>
 		</dict>

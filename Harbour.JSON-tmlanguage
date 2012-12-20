@@ -221,7 +221,7 @@
       },
       {  
          "comment" : "Boolean",
-         "match" : "(?i)(\\.(?:T|F)\\.)",
+         "match" : "(?i)(\\.(T|F)\\.)",
          "name": "constant.numeric.harbour" 
       }
 
