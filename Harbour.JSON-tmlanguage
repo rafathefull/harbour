@@ -8,11 +8,6 @@
          "name": "constant.numeric.harbour" 
       },
       {  
-         "comment" : "Boolean",
-         "match" : "(?i)(\\.(?:T|F)\\.)",
-         "name": "constant.numeric.harbour" 
-      },
-      {  
          "comment" : "cadenas comillas simples",
          "match" : "'[^']*'",
          "name": "string.quoted.single.harbour" 
@@ -33,8 +28,13 @@
          "name": "keyword.control.harbour" 
       },
       {  
+         "comment" : "operadores",
+         "match" : "(?i)\\b(?:and|or|not|!)\\b",
+         "name": "keyword.operator.harbour" 
+      },
+      {  
          "comment" : "declaraciones",
-         "match" : "(?i)\\b(?:local|default|field|static|public|static|external|REQUEST|private)\\b",
+         "match" : "(?i)\\b(?:local|default|field|static|public|static|external|request|private)\\b",
          "name": "storage.type.harbour" 
       },
       {  
@@ -206,9 +206,25 @@
       },
       {  
          "comment" : "Definition class",
-         "match" : "(?i)\\b(?:class|data|method|var|endclass)",
-         "name": "support.type.harbour" 
+         "match" : "(?i)\\b(?:class|classdata|data|method|message|var|endclass|onerror|error handler)",
+         "name": "support.class.harbour" 
+      },
+      {  
+         "comment" : "Definicion de constantes caracter",
+         "match" : "(?i)\\b(?:include|define|ifdef)",
+         "name": "support.constant.character.harbour" 
+      },
+      {  
+         "comment" : "Definicion de constantes logicas",
+         "match" : "(?i)\\b(?:true|false|nil)",
+         "name": "support.constant.language.harbour" 
+      },
+      {  
+         "comment" : "Boolean",
+         "match" : "(?i)(\\.(?:T|F)\\.)",
+         "name": "constant.numeric.harbour" 
       }
+
   ],
   "uuid": "56571807-d94d-4805-bbfc-87d347d189e4"
 }

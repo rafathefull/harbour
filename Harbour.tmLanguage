@@ -21,14 +21,6 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>números</string>
-			<key>match</key>
-			<string>(?i)(\.(?:T|F)\.)</string>
-			<key>name</key>
-			<string>constant.numeric.harbour</string>
-		</dict>
-		<dict>
-			<key>comment</key>
 			<string>cadenas comillas simples</string>
 			<key>match</key>
 			<string>'[^']*'</string>
@@ -61,9 +53,17 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>operadores</string>
+			<key>match</key>
+			<string>(?i)\b(?:and|or|not|!)\b</string>
+			<key>name</key>
+			<string>keyword.operator.harbour</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>declaraciones</string>
 			<key>match</key>
-			<string>(?i)\b(?:local|default|field|static|public|static|external|REQUEST|private)\b</string>
+			<string>(?i)\b(?:local|default|field|static|public|static|external|request|private)\b</string>
 			<key>name</key>
 			<string>storage.type.harbour</string>
 		</dict>
@@ -324,9 +324,33 @@
 			<key>comment</key>
 			<string>Definition class</string>
 			<key>match</key>
-			<string>(?i)\b(?:class|data|method|var|endclass)</string>
+			<string>(?i)\b(?:class|classdata|data|method|message|var|endclass|onerror|error handler)</string>
 			<key>name</key>
-			<string>support.type.harbour</string>
+			<string>support.class.harbour</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Definicion de constantes caracter</string>
+			<key>match</key>
+			<string>(?i)\b(?:include|define|ifdef)</string>
+			<key>name</key>
+			<string>support.constant.character.harbour</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Definicion de constantes logicas</string>
+			<key>match</key>
+			<string>(?i)\b(?:true|false|nil)</string>
+			<key>name</key>
+			<string>support.constant.language.harbour</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Boolean</string>
+			<key>match</key>
+			<string>(?i)(\.(?:T|F)\.)</string>
+			<key>name</key>
+			<string>constant.numeric.harbour</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
