@@ -1,0 +1,6 @@
+{
+    "cmd": ["harbour", "/l", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+  	"working_dir": "${c:/hb30/bin}",
+    "target": "console_exec"
+}
