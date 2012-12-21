@@ -4,7 +4,7 @@
   "patterns": [
       {  
          "comment" : "números",
-         "match" : "(\\s[0-9]+\\.?[0-9]*)",
+         "match" : "\\b(((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?))",
          "name": "constant.numeric.harbour" 
       },
       {  
@@ -19,7 +19,7 @@
       },
       {  
          "comment" : "sentencias de control",
-         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include|ifdef)\\b",
+         "match" : "(?i)\\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include|ifdef|stdout|ifndef)\\b",
          "name": "keyword.control.harbour" 
       },
       {  
@@ -62,7 +62,7 @@
       },
       {  
          "comment" : "funciones A",
-         "match" : "(?i)\\b(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL)\\b",
+         "match" : "(?i)\\b(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL|ASCIISum|AscPos|ASin|ASizeAlloc|AtAdjust|ATan|ACos|ATn2|AtNum|AtRepl|AtSkipStrings|AtToken|)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
