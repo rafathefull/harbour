@@ -3,19 +3,58 @@
 	"completions":
 	[
 		"Harbour",
+/* A */
 		{ "trigger": "aadd", 	"contents": "aadd(${1:aArray}, ${2:value})" },
 		{ "trigger": "abs", 	"contents": "abs(${1:number})" },
 		{ "trigger": "achoice", "contents": "achoice(${1:nTop}, ${2:nLeft}, ${3:nBottom}, ${4:nRight}, ${5:aItems})" },
 		{ "trigger": "aclone", 	"contents": "aclone(${1:aArray})" },
+		{ "trigger": "acopy", 	"contents": "acopy(${1:aSource}, ${2:aTarget})" },
 		{ "trigger": "adel", 	"contents": "adel(${1:aArray}, ${2:nPos})" },
+		{ "trigger": "adir", 	"contents": "adir(${1:cFileMask}, ${2:aName}, ${3:aSizes}, ${4:aDate}, ${5:aTime}, ${6:aAttr})" },
 		{ "trigger": "aeval", 	"contents": "aeval(${1:aArray}, \\{|${2:elem}| ${3:elem }\\}, ${4:nStart}, ${5:nCount})" },
-		{ "trigger": "aArray", 	"contents": "aArray(${1:number})" },
-		{ "trigger": "asort",	"contents": "asort(${1:aArray})" },
+		{ "trigger": "afields",	"contents": "afields(${1:aNames}, ${2:aTypes}, ${3:aLens}, ${4:aDecs})" },
+		{ "trigger": "afill", 	"contents": "afill(${1:aArray}, ${2:value})" },
+		{ "trigger": "ains", 	"contents": "ains(${1:aArray}, ${2:nPos})" },
+		{ "trigger": "alert", 	"contents": "alert(${1:message})" },
+		{ "trigger": "alias", 	"contents": "alias(${1:nWorkArea})" },
+		{ "trigger": "alltrim", "contents": "alltrim(${1:cString})" },
+		{ "trigger": "array", 	"contents": "array(${1:number})" },
+		{ "trigger": "asc", 	"contents": "asc(${1:cCharacter})" },
+		{ "trigger": "ascan", 	"contents": "ascan(${1:aArray}, ${2:expSearch})" },
+		{ "trigger": "asize", 	"contents": "asize(${1:aArray}, ${2:nLen})" },
+		{ "trigger": "asort", 	"contents": "asort(${1:aArray}, ${2:nStart}, ${3:nCount}, \\{|${4:x},${5:y}| ${4:x} < ${5:y}\\})" },
+		{ "trigger": "at", 		"contents": "at(${1:cSearch}, ${2:cString})" },
+		{ "trigger": "atail", 	"contents": "atail(${1:aArray})" },
+/* B */
+/* C */
 		{ "trigger": "chr", 	"contents": "chr(${1:ascii})" },
 		{ "trigger": "copy", 	"contents": "copy(${1:source}, ${2:dest})" },
 		{ "trigger": "cos", 	"contents": "cos(${1:arg})" },
 		{ "trigger": "count", 	"contents": "count()" },
+/* D */
 		{ "trigger": "date", 	"contents": "date()" }
+/* E */
+/* F */
+/* G */
+/* H */
+/* I */
+/* J */
+/* K */
+/* L */
+/* M */
+/* N */
+/* O */
+/* P */
+/* Q */
+/* R */
+/* S */
+/* T */
+/* U */
+/* V */
+/* W */
+/* X */
+/* Y */
+/* Z */
 	]
 }
 
