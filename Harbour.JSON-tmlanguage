@@ -43,22 +43,22 @@
          "name": "comment.strings.harbour" 
       },
       {
-         "comment" : "multi-line comments",
+        "comment" : "multi-line comments",
         "begin" : "^(\\s*/\\*.*)$",
         "beginCaptures": {
-         "1": { "name": "comment.strings.harbour" }
+         "0": { "name": "comment.multiline.begin.harbour" }
          },
-         "patterns": [
+         "end" : "^(\\s*\\*/\\s*)$",
+         "endCaptures": {
+         "0": { "name": "comment.multiline.end.harbour" }
+         },
+        "patterns": [
             { "include": "$self" },
             {  
               "name": "comment.strings.harbour",
-              "match": "."
+              "match": "\\\\."
             }
-         ],
-         "end" : "^(\\s*\\*/\\s*)$",
-         "endCaptures": {
-         "1": { "name": "comment.strings.harbour" }
-      }
+         ]
       },
       {  
          "comment" : "funciones A",

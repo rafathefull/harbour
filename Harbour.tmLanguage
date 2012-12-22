@@ -80,10 +80,10 @@
 			<string>^(\s*/\*.*)$</string>
 			<key>beginCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>comment.strings.harbour</string>
+					<string>comment.multiline.begin.harbour</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -92,10 +92,10 @@
 			<string>^(\s*\*/\s*)$</string>
 			<key>endCaptures</key>
 			<dict>
-				<key>1</key>
+				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>comment.strings.harbour</string>
+					<string>comment.multiline.end.harbour</string>
 				</dict>
 			</dict>
 			<key>patterns</key>
@@ -106,7 +106,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>.</string>
+					<string>\\.</string>
 					<key>name</key>
 					<string>comment.strings.harbour</string>
 				</dict>
