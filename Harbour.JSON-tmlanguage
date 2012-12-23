@@ -206,7 +206,7 @@
       },
       {  
          "comment" : "Definition class",
-         "match" : "(?i)\\b(?:class|classdata|data|method|message|var|endclass|onerror|error handler)",
+         "match" : "(?i)\\b(?:class|from|classdata|data|method|message|var|endclass|onerror|error handler)",
          "name": "support.class.harbour" 
       },
       {  
