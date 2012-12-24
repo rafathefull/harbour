@@ -32,12 +32,13 @@
 		{ "trigger": "cos", 	"contents": "cos(${1:arg})" },
 		{ "trigger": "count", 	"contents": "count()" },
 /* D */
-		{ "trigger": "date", 	"contents": "date()" }
+		{ "trigger": "date", 	"contents": "date()" },
 /* E */
 /* F */
 /* G */
 /* H */
 /* I */
+		{ "trigger": "i2bin", 	"contents": "i2bin(${1:number})" }
 /* J */
 /* K */
 /* L */
