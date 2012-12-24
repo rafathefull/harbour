@@ -38,7 +38,9 @@
 /* G */
 /* H */
 /* I */
-		{ "trigger": "i2bin", 	"contents": "i2bin(${1:number})" }
+		{ "trigger": "i2bin", 	"contents": "i2bin(${1:number})" },
+		{ "trigger": "if", 		"contents": "if(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
+		{ "trigger": "iif", 	"contents": "iif(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" }  
 /* J */
 /* K */
 /* L */
