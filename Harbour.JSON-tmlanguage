@@ -138,7 +138,7 @@
 
       {  
          "comment" : "funciones N",
-         "match" : "(?i)\\b(?:nationmsg|neterr|netname|nextkey|noshow)\\b",
+         "match" : "(?i)\\b(?:nationmsg|neterr|netname|nextkey|nosnow)\\b",
          "name": "support.function.basic.harbour" 
       },
 
@@ -171,7 +171,7 @@
       },
       {  
          "comment" : "funciones t",
-         "match" : "(?i)\\b(?:tapplykey|tbaddcol|tbapplykey|tbbblock|tbclose|tbcolumn|tbcolumnnew|tbcreate|tbdelcol|tbdisplay|tbeditcell|tbfblock|tbgobot|tbgotop|tbinscol|tbmodal|tbmouse|tbreader|tbrowse|tbrowsedb|tbrowsenew|tbsblock|tbskip|time|tone|topbar|transform|trim|tstringtype)\\b",
+         "match" : "(?i)\\b(?:tapplykey|tbaddcol|tbapplykey|tbbblock|tbclose|tbcolumn|tbcolumnnew|tbcreate|tbdelcol|tbdisplay|tbeditcell|tbfblock|tbgobot|tbgotop|tbinscol|tbmodal|tbmouse|tbreader|tbrowse|tbrowsedb|tbrowsenew|tbsblock|tbskip|time|tone|topbar|transform|trim|tstring|type)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  

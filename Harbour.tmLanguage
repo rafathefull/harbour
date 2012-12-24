@@ -220,7 +220,7 @@
 			<key>comment</key>
 			<string>funciones N</string>
 			<key>match</key>
-			<string>(?i)\b(?:nationmsg|neterr|netname|nextkey|noshow)\b</string>
+			<string>(?i)\b(?:nationmsg|neterr|netname|nextkey|nosnow)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -268,7 +268,7 @@
 			<key>comment</key>
 			<string>funciones t</string>
 			<key>match</key>
-			<string>(?i)\b(?:tapplykey|tbaddcol|tbapplykey|tbbblock|tbclose|tbcolumn|tbcolumnnew|tbcreate|tbdelcol|tbdisplay|tbeditcell|tbfblock|tbgobot|tbgotop|tbinscol|tbmodal|tbmouse|tbreader|tbrowse|tbrowsedb|tbrowsenew|tbsblock|tbskip|time|tone|topbar|transform|trim|tstringtype)\b</string>
+			<string>(?i)\b(?:tapplykey|tbaddcol|tbapplykey|tbbblock|tbclose|tbcolumn|tbcolumnnew|tbcreate|tbdelcol|tbdisplay|tbeditcell|tbfblock|tbgobot|tbgotop|tbinscol|tbmodal|tbmouse|tbreader|tbrowse|tbrowsedb|tbrowsenew|tbsblock|tbskip|time|tone|topbar|transform|trim|tstring|type)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
