@@ -62,29 +62,29 @@
       },
       {  
          "comment" : "funciones A",
-         "match" : "(?i)\\b(?:AADD|ABS|ACHOICE|ACLONE|ACOPY|ADEL|ADIR|AEVAL|AFIELDS|AFILL|AINS|ALERT|ALIAS|ALLTRIM|ARRAY|ASC|ASCAN|ASIZE|ASORT|AT|ATAIL|ASCIISum|AscPos|ASin|ASizeAlloc|AtAdjust|ATan|ACos|ATn2|AtNum|AtRepl|AtSkipStrings|AtToken|)\\b",
+         "match" : "(?i)\\b(?:aadd|abs|achoice|aclone|acopy|adel|adir|aeval|afields|afill|ains|alert|alias|alltrim|array|asc|ascan|asize|asort|at|atail|asciisum|ascpos|asin|asizealloc|atadjust|atan|acos|atn2|atnum|atrepl|atskipstrings|attoken|)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
          "comment" : "funciones B",
-         "match" : "(?i)\\b(?:BIN2I|BIN2L|BIN2U|BIN2W|BOF|BREAK|BROWSE)\\b",
+         "match" : "(?i)\\b(?:bin2i|bin2l|bin2u|bin2w|bof|break|browse)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
          "comment" : "funciones C",
-         "match" : "(?i)\\b(?:CDOW|CHR|CLIPINIT|CMONTH|COL|CTOD|CURDIR)\\b",
+         "match" : "(?i)\\b(?:cdow|chr|clipinit|cmonth|col|ctod|curdir)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones D",
-         "match" : "(?i)\\b(?:DATE|DAY|DAYS|DBAPPEND|DBCLEARFILTER|DBCLOSEALL|DBCLOSEAREA|DBCOMMIT|DBCOMMITALL|DBCREATE|DBDELETE|DBEDIT|DBEVAL|DBF|DBFILTER|DBGOBOTTOM|DBGOTO|DBGOTOP|DBRECALL|DBRLOCK|DBRLOCKLIST|DBRUNLOCK|DBSEEK|DBSELECTAREA|DBSETDRIVER|DBSETFILTER|DBSKIP|DBSTRUCT|DBUNLOCK|DBUNLOCKALL|DBUSEAREA|DELETED|DESCEND|DEVOUTPICT|DIRCHANGE|DIRREMOVE|DISKSPACE|DOW|DTOC|DTOS|dbSkipper|Directory)\\b",
+         "match" : "(?i)\\b(?:date|day|days|dbappend|dbclearfilter|dbcloseall|dbclosearea|dbcommit|dbcommitall|dbcreate|dbdelete|dbedit|dbeval|dbf|dbfilter|dbgobottom|dbgoto|dbgotop|dbrecall|dbrlock|dbrlocklist|dbrunlock|dbseek|dbselectarea|dbsetdriver|dbsetfilter|dbskip|dbstruct|dbunlock|dbunlockall|dbusearea|deleted|descend|devoutpict|dirchange|dirremove|diskspace|dow|dtoc|dtos|dbskipper|directory)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones E",
-         "match" : "(?i)\\b(?:ELAPTIME|EMPTY|EOF|ERRORSYS|EVAL|EXP|FCLOSE|FCOUNT|FCREATE|FERASE|FERROR|FIELDBLOCK|FIELDGET|FIELDNAME|FIELDPOS|FIELDPUT|FIELDWBLOCK|FILE|FLOCK|FOPEN|FOUND|FREAD|FREADSTR|FRENAME|FSEEK|FWRITE)\\b",
+         "match" : "(?i)\\b(?:elaptime|empty|eof|errorsys|eval|exp|fclose|fcount|fcreate|ferase|ferror|fieldblock|fieldget|fieldname|fieldpos|fieldput|fieldwblock|file|flock|fopen|found|fread|freadstr|frename|fseek|fwrite)\\b",
          "name": "support.function.basic.harbour" 
       },
 
@@ -96,19 +96,19 @@
 
       {  
          "comment" : "funciones G",
-         "match" : "(?i)\\b(?:GETENV)\\b",
+         "match" : "(?i)\\b(?:getenv)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones H",
-         "match" : "(?i)\\b(?:HARDCR|HB_ANSITOOEM|HB_DISKSPACE|HB_FEOF|HB_KEYPUT|HB_LANGNAME|HB_LANGSELECT|HB_OEMTOANSI|HB_OSNEWLINE|HB_PVALUE|HB_SetKeyCheck|HB_SetKeyGet|HB_SETKEYSAVE|HB_VALTOSTR|HEADER|hb_ColorIndex)\\b",
+         "match" : "(?i)\\b(?:hardcr|hb_ansitooem|hb_diskspace|hb_feof|hb_keyput|hb_langname|hb_langselect|hb_oemtoansi|hb_osnewline|hb_pvalue|hb_setkeycheck|hb_setkeyget|hb_setkeysave|hb_valtostr|header|hb_colorindex)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones I",
-         "match" : "(?i)\\b(?:I2BIN|INDEXEXT|INDEXKEY|INDEXORD|INKEY|INT|ISAFFIRM|ISALPHA|ISDIGIT|ISDISK|ISLOWER|ISNEGATIVE|ISUPPER)\\b",
+         "match" : "(?i)\\b(?:i2bin|indexext|indexkey|indexord|inkey|int|isaffirm|isalpha|isdigit|isdisk|islower|isnegative|isupper)\\b",
          "name": "support.function.basic.harbour" 
       },
 
@@ -126,102 +126,102 @@
 
       {  
          "comment" : "funciones L",
-         "match" : "(?i)\\b(?:L2BIN|LASTKEY|LASTREC|LEFT|LOG|LOWER|LTRIM|LUPDATE)\\b",
+         "match" : "(?i)\\b(?:l2bin|lastkey|lastrec|left|log|lower|ltrim|lupdate)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones M",
-         "match" : "(?i)\\b(?:MAKEDIR|MAX|MAXCOL|MAXROW|MCOL|MEMOEDIT|MEMOTRAN|MEMOWRIT|MEMVARBLOCK|MIN|MOD|MONTH|MROW)\\b",
+         "match" : "(?i)\\b(?:makedir|max|maxcol|maxrow|mcol|memoedit|memotran|memowrit|memvarblock|min|mod|month|mrow)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones N",
-         "match" : "(?i)\\b(?:NATIONMSG|NETERR|NEXTKEY)\\b",
+         "match" : "(?i)\\b(?:nationmsg|neterr|nextkey)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones O",
-         "match" : "(?i)\\b(?:ORDBAGEXT|ORDBAGNAME|ORDCONDSET|ORDCREATE|ORDDESTROY|ORDFOR|ORDKEY|ORDLISTADD|ORDLISTCLEAR|ORDLISTREBUILD|ORDNAME|ORDNUMBER|ORDSETFOCUS|OS|OUTERR|OUTSTD)\\b",
+         "match" : "(?i)\\b(?:ordbagext|ordbagname|ordcondset|ordcreate|orddestroy|ordfor|ordkey|ordlistadd|ordlistclear|ordlistrebuild|ordname|ordnumber|ordsetfocus|os|outerr|outstd)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
          "comment" : "funciones P",
-         "match" : "(?i)\\b(?:PADC|PADL|PADR|PCOUNT|PROCFILE|PROCLINE|PROCNAME)\\b",
+         "match" : "(?i)\\b(?:padc|padl|padr|pcount|procfile|procline|procname)\\b",
          "name": "support.function.basic.harbour" 
       },
 
       {  
-         "comment" : "funciones Q",
+         "comment" : "funciones q",
          "match" : "(?i)\\b(?:)",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones R",
-         "match" : "(?i)\\b(?:RAT|RDDLIST|RDDNAME|RDDSETDEFAULT|READKEY|READVAR|RECCOUNT|RECNO|RECSIZE|REPLICATE|RIGHT|RLOCK|ROUND|ROW|RTRIM)\\b",
+         "comment" : "funciones r",
+         "match" : "(?i)\\b(?:rat|rddlist|rddname|rddsetdefault|readkey|readvar|reccount|recno|recsize|replicate|right|rlock|round|row|rtrim)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones S",
-         "match" : "(?i)\\b(?:SECONDS|SECS|SELECT|SET|SETKEY|SETMODE|SETTYPEAHEAD|SPACE|SQRT|STR|STRTRAN|STRZERO|SUBSTR)\\b",
+         "comment" : "funciones s",
+         "match" : "(?i)\\b(?:seconds|secs|select|set|setkey|setmode|settypeahead|space|sqrt|str|strtran|strzero|substr)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones T",
-         "match" : "(?i)\\b(?:TBrowseDB|TBROWSENew|TClass|TIME|TONE|TRANSFORM|TRIM|TYPE)\\b",
+         "comment" : "funciones t",
+         "match" : "(?i)\\b(?:tbrowsedb|tbrowsenew|tclass|time|tone|transform|trim|type)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones U",
-         "match" : "(?i)\\b(?:U2BIN|UPPER|USED)\\b",
+         "comment" : "funciones u",
+         "match" : "(?i)\\b(?:u2bin|upper|used)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones V",
-         "match" : "(?i)\\b(?:VAL|VALTYPE|VERSION)\\b",
+         "comment" : "funciones v",
+         "match" : "(?i)\\b(?:val|valtype|version)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones W",
-         "match" : "(?i)\\b(?:W2BIN|WORD)",
+         "comment" : "funciones w",
+         "match" : "(?i)\\b(?:w2bin|word)",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones X",
+         "comment" : "funciones x",
          "match" : "(?i)\\b(?:)",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones Y",
-         "match" : "(?i)\\b(?:YEAR)\\b",
+         "comment" : "funciones y",
+         "match" : "(?i)\\b(?:year)\\b",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "funciones Z",
+         "comment" : "funciones z",
          "match" : "(?i)\\b(?:)",
          "name": "support.function.basic.harbour" 
       },
       {  
-         "comment" : "Definition class",
+         "comment" : "definition class",
          "match" : "(?i)\\b(?:class|classdata|data|method|message|var|endclass|onerror|error handler)",
          "name": "support.class.harbour" 
       },
       {  
-         "comment" : "Definicion de constantes caracter",
+         "comment" : "definicion de constantes caracter",
          "match" : "(?i)\\b(?:include|define|ifdef)",
          "name": "support.constant.character.harbour" 
       },
       {  
-         "comment" : "Definicion de constantes logicas",
+         "comment" : "definicion de constantes logicas",
          "match" : "(?i)\\b(?:true|false|nil)",
          "name": "support.constant.language.harbour" 
       },
       {  
-         "comment" : "Boolean",
-         "match" : "(?i)(\\.(T|F)\\.)",
+         "comment" : "boolean",
+         "match" : "(?i)(\\.(t|f)\\.)",
          "name": "constant.numeric.harbour" 
       }
 
