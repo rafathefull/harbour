@@ -33,17 +33,19 @@
 		{ "trigger": "count", 	"contents": "count()" },
 /* D */
 		{ "trigger": "date", 	"contents": "date()" },
-/* E */
+/* E */ 
 /* F */
 /* G */
 /* H */
 /* I */
 		{ "trigger": "i2bin", 	"contents": "i2bin(${1:number})" },
 		{ "trigger": "if", 		"contents": "if(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
-		{ "trigger": "iif", 	"contents": "iif(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" }  
+		{ "trigger": "iif", 	"contents": "iif(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
+		{ "trigger": "indexkey","contents": "indexkey(${1:nOrder})" },
+		{ "trigger": "inkey",	"contents": "inkey(${1:nWaitSeconds}, ${2:nEventMask})" }
 /* J */
 /* K */
-/* L */
+/* L */t
 /* M */
 /* N */
 /* O */
