@@ -23,7 +23,7 @@
 		{ "trigger": "ascan", 	"contents": "ascan(${1:aArray}, ${2:expSearch})" },
 		{ "trigger": "asize", 	"contents": "asize(${1:aArray}, ${2:nLen})" },
 		{ "trigger": "asort", 	"contents": "asort(${1:aArray}, ${2:nStart}, ${3:nCount}, \\{|${4:x},${5:y}| ${4:x} < ${5:y}\\})" },
-		{ "trigger": "at", 		"contents": "at(${1:cSearch}, ${2:cString})" },
+		{ "trigger": "at", 	"contents": "at(${1:cSearch}, ${2:cString})" },
 		{ "trigger": "atail", 	"contents": "atail(${1:aArray})" },
 		{ "trigger": "addascii","contents": "addascii(${1:cString},${2:nValue},${3:[nPos]}) //--> cNewString" },
 /* B */
@@ -40,7 +40,7 @@
 /* H */
 /* I */
 		{ "trigger": "i2bin", 	"contents": "i2bin(${1:number})" },
-		{ "trigger": "if", 		"contents": "if(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
+		{ "trigger": "if", 	"contents": "if(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
 		{ "trigger": "iif", 	"contents": "iif(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
 		{ "trigger": "indexkey","contents": "indexkey(${1:nOrder})" },
 		{ "trigger": "inkey",	"contents": "inkey(${1:nWaitSeconds}, ${2:nEventMask})" }
