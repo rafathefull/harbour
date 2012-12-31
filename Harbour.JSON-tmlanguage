@@ -211,7 +211,7 @@
       },
       {  
          "comment" : "definition class",
-         "match" : "(?i)\\b(?:class|from|classdata|data|method|message|var|endclass|onerror|error handler|virtual)",
+         "match" : "(?i)\\b(?:class|from|classdata|data|method|message|var|endclass|onerror|error handler|virtual|create class|access|assign|inline)",
          "name": "support.class.harbour" 
       },
       {  
