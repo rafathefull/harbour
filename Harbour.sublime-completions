@@ -40,10 +40,11 @@
 /* H */
 /* I */
 		{ "trigger": "i2bin", 	"contents": "i2bin(${1:number})" },
-		{ "trigger": "if", 	"contents": "if(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
+		{ "trigger": "if", 		"contents": "if(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
 		{ "trigger": "iif", 	"contents": "iif(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
 		{ "trigger": "indexkey","contents": "indexkey(${1:nOrder})" },
-		{ "trigger": "inkey",	"contents": "inkey(${1:nWaitSeconds}, ${2:nEventMask})" }
+		{ "trigger": "inkey",	"contents": "inkey(${1:nWaitSeconds}, ${2:nEventMask})" },
+		{ "trigger": "int",		"contents": "int(${1:nNumber})" }  
 /* J */
 /* K */
 /* L */
