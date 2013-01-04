@@ -32,7 +32,7 @@
 		{ "trigger": "atan", 	"contents": "atan(${1:nRadians})" },
 		{ "trigger": "atn2", 	"contents": "atn2(${1:nSine},${2:nCosine})" },
 		{ "trigger": "atnum", 	"contents": "atnum(${1:cSearch},${2:cString},${3:[nCount]},${4:[nSkipChars]})" },
-		{ "trigger": "addascii","contents": "addascii(${1:cString},${2:nValue},${3:[nPos]}) //--> cNewString" },
+		{ "trigger": "addascii","contents": "addascii(${1:cString},${2:nValue},${3:[nPos]})" },
 /* B */
 /* C */
 		{ "trigger": "chr", 	"contents": "chr(${1:ascii})" },
@@ -51,7 +51,13 @@
 		{ "trigger": "iif", 	"contents": "iif(${1:lCondition}, ${2:exprTrue}, ${3:exprFalse})" },
 		{ "trigger": "indexkey","contents": "indexkey(${1:nOrder})" },
 		{ "trigger": "inkey",	"contents": "inkey(${1:nWaitSeconds}, ${2:nEventMask})" },
-		{ "trigger": "int",		"contents": "int(${1:nNumber})" }  
+		{ "trigger": "int",		"contents": "int(${1:nNumber})" },
+		{ "trigger": "invertattr", "contents": "int(${1:xColor})" },
+		{ "trigger": "invertwin", "contents": "int(${1:nTop}, ${2:nLeft}, ${3:nBottom}, ${4:nRight})" },
+		{ "trigger": "isaffirm", "contents": "int(${1:cChar})" },
+		{ "trigger": "isalnum", "contents": "int(${1:cString})" },
+		{ "trigger": "isalpha", "contents": "int(${1:cString})" },
+		{ "trigger": "isascii", "contents": "int(${1:cString})" }
 /* J */
 /* K */
 /* L */
