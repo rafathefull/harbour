@@ -38,9 +38,21 @@
          "name": "storage.type.harbour" 
       },
       {  
-         "comment" : "in-line comment with // or *",
-         "match" : "((//|\\*).*)",
-         "name": "comment.strings.harbour" 
+         "comment" : "in-line comment with /* */",
+         "begin" : "/\\*",
+         "captures" : {
+            "0": { "name": "punctuation.definition.comment.harbour" }
+         },
+         "end" : "\\*/",
+         "name": "comment.block.harbour" 
+      },
+      {
+         "comment" : "in-line comment with //",
+         "captures" : {
+            "1": { "name": "punctuation.definition.comment.harbour" }
+         },
+         "match": "(\/).*?($\\n?|(?=\\?&gt;))",
+         "name": "comment.line.double-slash.harbour" 
       },
       {
         "comment" : "multi-line comments",

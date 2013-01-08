@@ -68,12 +68,38 @@
 			<string>storage.type.harbour</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.harbour</string>
+				</dict>
+			</dict>
 			<key>comment</key>
-			<string>in-line comment with // or *</string>
-			<key>match</key>
-			<string>((//|\*).*)</string>
+			<string>in-line comment with /* */</string>
+			<key>end</key>
+			<string>\*/</string>
 			<key>name</key>
-			<string>comment.strings.harbour</string>
+			<string>comment.block.harbour</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.harbour</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>in-line comment with //</string>
+			<key>match</key>
+			<string>(/).*?($\n?|(?=\?&amp;gt;))</string>
+			<key>name</key>
+			<string>comment.line.double-slash.harbour</string>
 		</dict>
 		<dict>
 			<key>begin</key>
