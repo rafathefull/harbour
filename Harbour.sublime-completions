@@ -57,7 +57,15 @@
 		{ "trigger": "isaffirm", "contents": "int(${1:cChar})" },
 		{ "trigger": "isalnum", "contents": "int(${1:cString})" },
 		{ "trigger": "isalpha", "contents": "int(${1:cString})" },
-		{ "trigger": "isascii", "contents": "int(${1:cString})" }
+		{ "trigger": "iscntrl", "contents": "int(${1:cString})" },
+		{ "trigger": "iscolor", "contents": "iscolor()" },
+		{ "trigger": "isdefcolor", "contents": "isdefcolor()" },
+		{ "trigger": "isdigit", "contents": "int(${1:cString})" },
+		{ "trigger": "isdir", 	"contents": "int(${1:cDirSpec})" },
+		{ "trigger": "isdirectory", "contents": "int(${1:cDirName})" },
+		{ "trigger": "isdisk", 	"contents": "int(${1:cDrive})" },
+		{ "trigger": "isgraph", "contents": "int(${1:cString})" }
+
 /* J */
 /* K */
 /* L */
