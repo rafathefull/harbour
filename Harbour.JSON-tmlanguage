@@ -241,7 +241,6 @@
          "match" : "(?i)(\\.(t|f)\\.)",
          "name": "constant.numeric.harbour" 
       }
-
   ],
   "uuid": "56571807-d94d-4805-bbfc-87d347d189e4"
 }
