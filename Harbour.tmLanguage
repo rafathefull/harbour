@@ -358,7 +358,7 @@
 			<key>comment</key>
 			<string>definition class</string>
 			<key>match</key>
-			<string>(?i)\b(?:class|from|classdata|data|method|message|var|endclass|onerror|error handler|virtual|create class|access|assign|inline|EXPORTED:|PROTECTED:|HIDDEN:)</string>
+			<string>(?i)\b(?:from|classdata|class|data|method|message|var|endclass|onerror|error handler|virtual|create class|access|assign|inline|EXPORTED:|PROTECTED:|HIDDEN:)</string>
 			<key>name</key>
 			<string>support.class.harbour</string>
 		</dict>
