@@ -97,7 +97,7 @@
 			<key>comment</key>
 			<string>in-line comment with //</string>
 			<key>match</key>
-			<string>(/).*?($\n?|(?=\?&amp;gt;))</string>
+			<string>(/).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
 			<string>comment.line.double-slash.harbour</string>
 		</dict>

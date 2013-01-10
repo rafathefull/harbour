@@ -51,7 +51,7 @@
          "captures" : {
             "1": { "name": "punctuation.definition.comment.harbour" }
          },
-         "match": "(\/).*?($\\n?|(?=\\?&gt;))",
+         "match": "(\/).*?($\\n?|(?=\\?>))",
          "name": "comment.line.double-slash.harbour" 
       },
       {
