@@ -240,6 +240,11 @@
          "comment" : "boolean",
          "match" : "(?i)(\\.(t|f)\\.)",
          "name": "constant.numeric.harbour" 
+      },
+      {  
+         "comment" : "commands",
+         "match" : "(?i)\\b(?:COPY|EXTENDED|CREATE|DELETE|DIR|EJECT|ERASE|FILE|KEYBOARD|LABEL FORM|MENU TO|PROMPT|PACK|RENAME|REPORT FORM|RESTORE SCREEN|RUN|SAVE SCREEN|SAY|STRUCTURE|ALTERNATE|BELL|CENTURY|CONSOLE|DATE|DECIMALS|DEFAULT|DEVICE|EPOCH|FIXED|INTENSITY|KEY|MESSAGE|PATH|PRINTER|WRAP|TYPE|ZAP)\\b",
+         "name": "entity.name.function.harbour"
       }
   ],
   "uuid": "56571807-d94d-4805-bbfc-87d347d189e4"

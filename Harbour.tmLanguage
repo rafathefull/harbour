@@ -386,6 +386,14 @@
 			<key>name</key>
 			<string>constant.numeric.harbour</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>commands</string>
+			<key>match</key>
+			<string>(?i)\b(?:COPY|EXTENDED|CREATE|DELETE|DIR|EJECT|ERASE|FILE|KEYBOARD|LABEL FORM|MENU TO|PROMPT|PACK|RENAME|REPORT FORM|RESTORE SCREEN|RUN|SAVE SCREEN|SAY|STRUCTURE|ALTERNATE|BELL|CENTURY|CONSOLE|DATE|DECIMALS|DEFAULT|DEVICE|EPOCH|FIXED|INTENSITY|KEY|MESSAGE|PATH|PRINTER|WRAP|TYPE|ZAP)\b</string>
+			<key>name</key>
+			<string>entity.name.function.harbour</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.harbour</string>
