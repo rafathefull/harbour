@@ -150,9 +150,14 @@
 		{ "trigger": "isprinter", 	"contents": "isprinter(${1:cPrinterName})" },
 		{ "trigger": "isquick", 	"contents": "isquick(${1:cString})" },
 		{ "trigger": "isshortcut", 	"contents": "isshortcut(${1:cString})" },
-		{ "trigger": "isupper",		"contents": "isupper(${1:cString})" } 
-
+		{ "trigger": "isupper",		"contents": "isupper(${1:cString})" },
+		{ "trigger": "isvalidthread", "contents": "isvalidthread(${1:xValue})" },
+		{ "trigger": "isxdigit",	"contents": "isxdigit(${1:cString})" },
 /* J */
+		{ "trigger": "jointhread",	"contents": "jointhread(${1:pThreadHandle})" },
+		{ "trigger": "justleft", 	"contents": "justleft(${1:cString}, ${2:[xChar>]})" }
+
+
 /* K */
 /* L */
 /* M */
