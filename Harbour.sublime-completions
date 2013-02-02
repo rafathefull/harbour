@@ -151,14 +151,22 @@
 		{ "trigger": "isquick", 	"contents": "isquick(${1:cString})" },
 		{ "trigger": "isshortcut", 	"contents": "isshortcut(${1:cString})" },
 		{ "trigger": "isupper",		"contents": "isupper(${1:cString})" },
-		{ "trigger": "isvalidthread", "contents": "isvalidthread(${1:xValue})" },
+		{ "trigger": "isvalidthread", 	"contents": "isvalidthread(${1:xValue})" },
 		{ "trigger": "isxdigit",	"contents": "isxdigit(${1:cString})" },
 /* J */
 		{ "trigger": "jointhread",	"contents": "jointhread(${1:pThreadHandle})" },
-		{ "trigger": "justleft", 	"contents": "justleft(${1:cString}, ${2:[xChar>]})" }
-
-
+		{ "trigger": "justleft", 	"contents": "justleft(${1:cString}, ${2:[xChar}]})" },
 /* K */
+		{ "trigger": "kbdstat",		"contents": "kbdstat()" },
+		{ "trigger": "keysec",		"contents": "keysec( ${1:nkey}, ${2:ntime}, ${3:[ncounter]}, ${4:[lmode]} )" },
+		{ "trigger": "keytime",		"contents": "keytime( ${1:nkey}, ${2:ctime} )" },
+		{ "trigger": "killallthreads",	"contents": "killallthreads()" },
+		{ "trigger": "killthread",	"contents": "killthread( ${1:pthreadhandle} )" },
+		{ "trigger": "ksetcaps",	"contents": "ksetcaps( ${1:[lnewmode]} )" },
+		{ "trigger": "ksetins",		"contents": "ksetins( ${1:[lnewmode]} )" },
+		{ "trigger": "ksetnum",		"contents": "ksetnum( ${1:[lnewmode]} )" },
+		{ "trigger": "ksetscroll2",	"contents": "ksetscroll2( ${1:lnewmode}] )" }
+
 /* L */
 /* M */
 /* N */
