@@ -54,24 +54,6 @@
          "match": "(\/).*?($\\n?|(?=\\?>))",
          "name": "comment.line.double-slash.harbour" 
       },
-      {
-        "comment" : "multi-line comments",
-        "begin" : "^(\\s*/\\*.*)$",
-        "beginCaptures": {
-         "0": { "name": "comment.multiline.begin.harbour" }
-         },
-         "end" : "^(\\s*\\*/\\s*)$",
-         "endCaptures": {
-         "0": { "name": "comment.multiline.end.harbour" }
-         },
-        "patterns": [
-            { "include": "$self" },
-            {  
-              "name": "comment.strings.harbour",
-              "match": "\\\\."
-            }
-         ]
-      },
       {  
          "comment" : "funciones A",
          "match" : "(?i)\\b(?:aadd|abs|accelerator|achoice|aclone|acopy|adel|adir|aeval|afields|afill|ains|alert|alias|alltrim|altd|ampm|applydefau|array|asc|ascan|asize|asort|at|atail|asciisum|ascpos|asin|asizealloc|atadjust|atan|acos|atn2|atnum|atrepl|atskipstrings|attoken|)\\b",

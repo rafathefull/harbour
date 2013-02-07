@@ -102,43 +102,6 @@
 			<string>comment.line.double-slash.harbour</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>^(\s*/\*.*)$</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>comment.multiline.begin.harbour</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>multi-line comments</string>
-			<key>end</key>
-			<string>^(\s*\*/\s*)$</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>comment.multiline.end.harbour</string>
-				</dict>
-			</dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\\.</string>
-					<key>name</key>
-					<string>comment.strings.harbour</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
 			<key>comment</key>
 			<string>funciones A</string>
 			<key>match</key>
