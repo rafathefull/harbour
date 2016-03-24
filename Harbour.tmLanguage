@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -8,9 +8,34 @@
 		<string>ch</string>
 	</array>
 	<key>name</key>
-	<string>Harbour</string>
+	<string>Harbour</string> 
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>begin</key>
+			<string>(?ix)
+  \s*(function|procedure)
+  \s*([_$a-zA-Z][$\w]*)?\s*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function.harbour</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.harbour</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>e.g. function play(arg1, arg2) {  }</string>
+			<key>end</key>
+			<string>(?&lt;=\))</string>
+			<key>name</key>
+			<string>meta.function.harbour</string>
+		</dict>
 		<dict>
 			<key>comment</key>
 			<string>números</string>
@@ -39,7 +64,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|endif|while|end|enddo|exit|static function|function|return|for|next|include|ifdef|stdout|ifndef)\b</string>
+			<string>(?i)\b(?:do|case|endcase|otherwise|switch|if|else|elseif|endif|while|end|enddo|exit|static function|function|return|for|next|include|ifdef|stdout|ifndef)\b</string>
 			<key>name</key>
 			<string>keyword.control.harbour</string>
 		</dict>
@@ -169,7 +194,7 @@
 			<key>comment</key>
 			<string>funciones I</string>
 			<key>match</key>
-			<string>(?i)\b(?:i2bin|indexext|indexkey|indexord|inkey|int|isaffirm|isalpha|iscolor|isdefcolor|isdigit|isdisk|islower|isnegative|isprinter|isquick|isshortcut|isupper)\b</string>
+			<string>(?i)\b(?:i2bin|iif|indexext|indexkey|indexord|inkey|int|isaffirm|isalpha|iscolor|isdefcolor|isdigit|isdisk|islower|isnegative|isprinter|isquick|isshortcut|isupper)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -241,7 +266,7 @@
 			<key>comment</key>
 			<string>funciones r</string>
 			<key>match</key>
-			<string>(?i)\b(?:radgrdefco|radiobutto|radiobutton|radiogroup|raditdefco|rangecheck|rat|rddinfo|rddlist|rddname|rddregister|rddsetdefa|rddsetdefault|rddsys|rdd_count|rdd_info|rdd_name|readexit|readformat|readinsert|readkey|readkill|readmodal|readstats|readupdated|readvar|reccount|recno|recsize|replicate|restscreen|right|rlock|round|row|rtrim)\b</string>
+			<string>(?i)\b(?:radgrdefco|radiobutto|radiobutton|radiogroup|raditdefco|rangecheck|rat|rddinfo|rddlist|rddname|rddregister|rddsetdefa|rddsetdefault|rddsys|rdd_count|rdd_info|rdd_name|readexit|readformat|readinsert|readkey|readkill|readmodal|readstats|readupdated|readvar|reccount|racno|recsize|replicate|restscreen|right|rlock|round|row|rtrim)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -257,7 +282,7 @@
 			<key>comment</key>
 			<string>funciones t</string>
 			<key>match</key>
-			<string>(?i)\b(?:tapplykey|tbaddcol|tbapplykey|tbbblock|tbclose|tbcolumn|tbcolumnnew|tbcreate|tbdelcol|tbdisplay|tbeditcell|tbfblock|tbgobot|tbgotop|tbinscol|tbmodal|tbmouse|tbreader|tbrowse|tbrowsedb|tbrowsenew|tbsblock|tbskip|time|tone|topbar|transform|trim|tstring|type)\b</string>
+			<string>(?i)\b(?:tapplykey|tbaddcol|tbapplykey|tbbblock|tbclose|tbcolumn|tbcolumnnew|tbcreate|tbdelcol|tbdisplay|tbeditcell|tbfblock|tbgobot|tbgotop|tbinscol|tbmodal|tbmouse|tbreader|tbrowse|tbrowsedb|tbrowsenew|tbsblock|tbskip|time|tone|topbar|transform|trim|tstring|ttos|type)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -355,7 +380,120 @@
 			<key>match</key>
 			<string>(?i)\b(?:COPY|EXTENDED|CREATE|DELETE|DIR|EJECT|ERASE|FILE|KEYBOARD|LABEL FORM|MENU TO|PROMPT|PACK|RENAME|REPORT FORM|RESTORE SCREEN|RUN|SAVE SCREEN|SAY|STRUCTURE|ALTERNATE|BELL|CENTURY|CONSOLE|DATE|DECIMALS|DEFAULT|DEVICE|EPOCH|FIXED|INTENSITY|KEY|MESSAGE|PATH|PRINTER|WRAP|TYPE|ZAP)\b</string>
 			<key>name</key>
-			<string>entity.name.function.harbour</string>
+			<string>support.function.basic.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.)\b(delete|in|instanceof|new|of|typeof|void|with)\b</string>
+			<key>name</key>
+			<string>keyword.operator.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+!(?!=)| # logical-not     right-to-left   right
+&amp;&amp;    | # logical-and     left-to-right   both
+\|\|  | # logical-or      left-to-right   both</string>
+			<key>name</key>
+			<string>keyword.operator.logical.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+=(?!=)| # assignment      right-to-left   both</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+%=   | # assignment      right-to-left   both
+&amp;=   | # assignment      right-to-left   both
+\*=  | # assignment      right-to-left   both
+\+=  | # assignment      right-to-left   both
+-=   | # assignment      right-to-left   both
+/=   | # assignment      right-to-left   both
+\^=  | # assignment      right-to-left   both
+\|=  | # assignment      right-to-left   both
+&lt;&lt;=  | # assignment      right-to-left   both
+&gt;&gt;=  | # assignment      right-to-left   both
+&gt;&gt;&gt;= | # assignment      right-to-left   both</string>
+			<key>name</key>
+			<string>keyword.operator.assignment.augmented.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+~    | # bitwise-not     right-to-left   right
+&lt;&lt;   | # bitwise-shift   left-to-right   both
+&gt;&gt;&gt;  | # bitwise-shift   left-to-right   both
+&gt;&gt;   | # bitwise-shift   left-to-right   both
+&amp;    | # bitwise-and     left-to-right   both
+\^   | # bitwise-xor     left-to-right   both
+\|     # bitwise-or      left-to-right   both</string>
+			<key>name</key>
+			<string>keyword.operator.bitwise.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+&lt;=   | # relational      left-to-right   both
+&gt;=   | # relational      left-to-right   both
+&lt;    | # relational      left-to-right   both
+&gt;      # relational      left-to-right   both</string>
+			<key>name</key>
+			<string>keyword.operator.relational.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+===  | # equality        left-to-right   both
+!==  | # equality        left-to-right   both
+==   | # equality        left-to-right   both
+!=     # equality        left-to-right   both</string>
+			<key>name</key>
+			<string>keyword.operator.comparison.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+--   | # decrement       n/a             right-or-left
+\+\+ | # increment       n/a             right-or-left
+/    | # division        left-to-right   both
+%    | # modulus         left-to-right   both
+\*   | # multiplication  left-to-right   both
+\+   | # addition        left-to-right   both
+-      # subtraction     left-to-right   both</string>
+			<key>name</key>
+			<string>keyword.operator.arithmetic.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\?|:</string>
+			<key>name</key>
+			<string>keyword.operator.ternary.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;!\.)\.\.\.</string>
+			<key>name</key>
+			<string>keyword.operator.spread.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\.</string>
+			<key>name</key>
+			<string>keyword.operator.accessor.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+\[  | # 
+\]  | # 
+\{  | # 
+\}    # </string>
+			<key>name</key>
+			<string>variable.parameter.harbour</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
