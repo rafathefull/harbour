@@ -8,7 +8,7 @@
 		<string>ch</string>
 	</array>
 	<key>name</key>
-	<string>Harbour</string> 
+	<string>Harbour</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -32,7 +32,7 @@
 			<key>comment</key>
 			<string>e.g. function play(arg1, arg2) {  }</string>
 			<key>end</key>
-			<string>(?&lt;=\))</string>
+			<string>(?&lt;=\)|\n)</string>
 			<key>name</key>
 			<string>meta.function.harbour</string>
 		</dict>
@@ -88,7 +88,7 @@
 			<key>comment</key>
 			<string>declaraciones</string>
 			<key>match</key>
-			<string>(?i)\b(?:local|default|field|static|public|static|external|request|private)\b</string>
+			<string>(?i)\b(?:local|default|field|static|public|static|external|request|private|global)\b</string>
 			<key>name</key>
 			<string>storage.type.harbour</string>
 		</dict>
@@ -122,7 +122,7 @@
 			<key>comment</key>
 			<string>in-line comment with //</string>
 			<key>match</key>
-			<string>(/).*?($\n?|(?=\?&gt;))</string>
+			<string>(//).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
 			<string>comment.line.double-slash.harbour</string>
 		</dict>
@@ -130,7 +130,7 @@
 			<key>comment</key>
 			<string>funciones A</string>
 			<key>match</key>
-			<string>(?i)\b(?:aadd|abs|accelerator|achoice|aclone|acopy|adel|adir|aeval|afields|afill|ains|alert|alias|alltrim|altd|ampm|applydefau|array|asc|ascan|asize|asort|at|atail|asciisum|ascpos|asin|asizealloc|atadjust|atan|acos|atn2|atnum|atrepl|atskipstrings|attoken|)\b</string>
+			<string>(?i)\b(?:aadd|abs|accelerator|achoice|aclone|acopy|adel|adir|aeval|afields|afill|ains|alert|alltrim|altd|ampm|applydefau|array|asc|ascan|asize|asort|at|atail|asciisum|ascpos|asin|asizealloc|atadjust|atan|acos|atn2|atnum|atrepl|atskipstrings|attoken|)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
@@ -344,14 +344,6 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>definition class</string>
-			<key>match</key>
-			<string>(?i)\b(?:from|classdata|class|data|method|message|var|endclass|onerror|error handler|virtual|create class|access|assign|inline|EXPORTED:|PROTECTED:|HIDDEN:)</string>
-			<key>name</key>
-			<string>support.class.harbour</string>
-		</dict>
-		<dict>
-			<key>comment</key>
 			<string>definicion de constantes caracter</string>
 			<key>match</key>
 			<string>(?i)\b(?:include|define|ifdef)</string>
@@ -378,15 +370,31 @@
 			<key>comment</key>
 			<string>commands</string>
 			<key>match</key>
-			<string>(?i)\b(?:COPY|EXTENDED|CREATE|DELETE|DIR|EJECT|ERASE|FILE|KEYBOARD|LABEL FORM|MENU TO|PROMPT|PACK|RENAME|REPORT FORM|RESTORE SCREEN|RUN|SAVE SCREEN|SAY|STRUCTURE|ALTERNATE|BELL|CENTURY|CONSOLE|DATE|DECIMALS|DEFAULT|DEVICE|EPOCH|FIXED|INTENSITY|KEY|MESSAGE|PATH|PRINTER|WRAP|TYPE|ZAP)\b</string>
+			<string>(?i)\b(?:COPY|EXTENDED|CREATE|DELETE|DIR|EJECT|ERASE|FILE|KEYBOARD|LABEL FORM|MENU TO|PROMPT|PACK|RENAME|REPORT FORM|RESTORE SCREEN|RUN|SAVE SCREEN|SAY |STRUCTURE|ALTERNATE|BELL|CENTURY|CONSOLE|DATE|DECIMALS|DEFAULT|DEVICE|EPOCH |FIXED|INTENSITY|KEY|MESSAGE|PATH|PRINTER|WRAP|TYPE|ZAP|REPLACE|INSERT|APPEND|DELETE|close|databases|commit|seek|localte|use)\b</string>
 			<key>name</key>
 			<string>support.function.basic.harbour</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>definition class</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(delete|in|instanceof|new|of|typeof|void|with)\b</string>
+			<string>(?i)\b(?:lassdata|class|data|method|message|var|endclass|onerror|error handler|virtual|create class|access|assign|inline|EXPORTED:|PROTECTED:|HIDDEN:)\b</string>
 			<key>name</key>
-			<string>keyword.operator.harbour</string>
+			<string>support.class.harbour</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>options on commands</string>
+			<key>match</key>
+			<string>(?i)\b(?:FOR|WHILE|BLANK|WITH|TO)\b</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.harbour</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b(in|instanceof|new|of|typeof|void|with|on|off|alias|in|all|from|for)\b</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.harbour</string>
 		</dict>
 		<dict>
 			<key>match</key>
