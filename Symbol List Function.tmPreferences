@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Symbol List Function</string>
+    <key>scope</key>
+    <string>source.harbour meta.function.harbour entity.name.function.harbour</string>
+    <key>settings</key>
+    <dict>
+        <key>showInSymbolList</key>
+        <string>1</string>
+        <key>showInIndexedSymbolList</key>
+        <integer>1</integer>
+       <!-- <key>symbolIndexTransformation</key>
+        <string>/(\w)/\L$1/g</string>
+        <key>symbolTransformation</key>
+        <string>/(\w)/\L$1/g</string>-->
+
+    </dict>
+    <key>uuid</key>
+    <string>56571807-d94d-4805-bbfc-87d347d189e4</string>
+</dict>
+</plist>
